@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const name = document.getElementById('name').value;
   
     try {
-      const response = await fetch('http://localhost:3000/start', {
+      const response = await fetch('http://localhost:3000/start', { //Change localhost to Public IP Address
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name })
